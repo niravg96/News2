@@ -37,7 +37,6 @@ public class Registration extends AppCompatActivity {
     private Calendar calander;
     private int year,month,day;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
