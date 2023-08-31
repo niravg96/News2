@@ -11,7 +11,8 @@ import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
 
-public class News_Details extends AppCompatActivity {
+public class News_Details extends AppCompatActivity
+{
 
     NewsHeadLines headlines;
     TextView txt_title,txt_author,txt_time,txt_detail,txt_content;
@@ -38,14 +39,11 @@ public class News_Details extends AppCompatActivity {
         txt_content.setText(headlines.getContent());
 
         Picasso.get().load(headlines.getUrlToImage()).into(img_view);
-
     }
     public  void onBackPressed()
     {
-
         Intent i =new Intent(News_Details.this,News_Home.class);
         startActivity(i);
         finish();
-                  
     }
 }

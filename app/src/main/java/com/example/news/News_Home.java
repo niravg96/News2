@@ -98,7 +98,6 @@ public class News_Home extends AppCompatActivity implements SelectListener {
     private Boolean isconnected()
     {
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-
         return cm.getActiveNetworkInfo() !=null && cm.getActiveNetworkInfo().isConnected();
     }
     private final OnFetchDataListener<NewsApiResponse> listener =new OnFetchDataListener<NewsApiResponse>() {
